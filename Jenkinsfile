@@ -9,8 +9,6 @@ pipeline {
                     changelog: true,
                     poll: true
                 )
-                steps {
-                    sh 'cd . docker run -d -p 80:80 weserver'
                 }    
             }
         }

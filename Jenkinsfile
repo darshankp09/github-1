@@ -10,7 +10,7 @@ pipeline {
                     poll: true
                 )
                 steps {
-                    sh 'node --version'
+                    sh 'cd . docker run -d -p 80:80 weserver'
                 }    
             }
         }

@@ -9,6 +9,9 @@ pipeline {
                     changelog: true,
                     poll: true
                 )
+                steps {
+                    sh 'node --version'
+                }    
             }
         }
     }

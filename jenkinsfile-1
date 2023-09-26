@@ -4,7 +4,7 @@ pipeline {
         stage("Clone Git Repository") {
             steps {
                 git(
-                    url: "https://github.com/ssbostan/neptune.git",
+                    url: "https://github.com/darshankp09/github-1.git",
                     branch: "master",
                     changelog: true,
                     poll: true

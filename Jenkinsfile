@@ -13,10 +13,10 @@ pipeline {
             }
         stage("build docker file") {
             steps {
-                script (
+                script {
                     sh:"docker build -t webserver ."
                     
-                )
+                }
         }
     }
     }

@@ -14,6 +14,7 @@ pipeline {
         stage("build docker file") {
             steps {
                 sh "docker build -t webserver ."
+                sh "docker run -d -p 80:80 webserver"
                     
                 }
         }

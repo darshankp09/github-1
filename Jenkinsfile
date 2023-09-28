@@ -13,6 +13,7 @@ pipeline {
             }
         stage("build docker file") {
             steps {
+                sh "whoami"
                 sh "pwd"
                 sh "ls -l"
                 sh "sudo docker build -t webserver ."

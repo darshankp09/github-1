@@ -16,8 +16,8 @@ pipeline {
                 sh "whoami"
                 sh "pwd"
                 sh "ls -l"
-                sh "sudo docker build -t webserver ."
-                sh "sudo docker run -d -p 80:80 webserver"
+                sh "docker build -t webserver ."
+                sh "docker run -d -p 80:80 webserver"
                     
                 }
         }

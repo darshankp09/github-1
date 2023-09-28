@@ -15,8 +15,8 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "ls -l"
-                sh "docker build -t webserver ."
-                sh "docker run -d -p 80:80 webserver"
+                sh "sudo docker build -t webserver ."
+                sh "sudo docker run -d -p 80:80 webserver"
                     
                 }
         }
